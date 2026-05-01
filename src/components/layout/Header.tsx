@@ -17,9 +17,9 @@ export const Header = () => {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center space-x-2">
           <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-primary-foreground font-bold text-xl">
-            N
+            NX
           </div>
-          <span className="hidden font-bold sm:inline-block text-xl tracking-tight">Nasif Tools</span>
+          <span className="hidden font-bold sm:inline-block text-xl tracking-tight italic">NasifToolsX</span>
         </Link>
 
         {/* Global Search */}

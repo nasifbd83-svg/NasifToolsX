@@ -47,11 +47,11 @@ export const Home = () => {
               10+ Free Online Tools
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70">
-              Powerful Tools for <br /> Modern Creators
+              NasifToolsX <br /> <span className="text-primary">Fast, Free & Smart</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed font-sans">
-              Simple, fast, and secure online tools for images, PDFs, and text. 
-              Everything works directly in your browser.
+              Professional-grade tools for creators, developers, and students.
+              Processed 100% in your browser for ultimate privacy.
             </p>
           </motion.div>
 
@@ -77,6 +77,35 @@ export const Home = () => {
       {/* Tools Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto">
+          {/* Recent Tools Widget */}
+          {(() => {
+            const saved = localStorage.getItem('recent_tools');
+            const recentIds = saved ? JSON.parse(saved) : [];
+            const recentTools = TOOLS.filter(t => recentIds.includes(t.id));
+            
+            if (recentTools.length === 0) return null;
+
+            return (
+              <div className="mb-16">
+                <h2 className="text-xl font-bold mb-6 flex items-center">
+                  <Zap className="h-5 w-5 mr-3 text-primary animate-pulse" />
+                  Recent Tools
+                </h2>
+                <div className="flex flex-wrap gap-4">
+                  {recentTools.map(tool => (
+                    <Link key={tool.id} to={tool.path}>
+                      <div className="flex items-center space-x-3 px-4 py-3 bg-muted/50 rounded-2xl border border-muted-foreground/10 hover:border-primary/30 transition-all hover:bg-muted group">
+                         <div className="p-2 rounded-lg bg-background group-hover:text-primary transition-colors">
+                           <tool.icon className="h-4 w-4" />
+                         </div>
+                         <span className="text-sm font-bold">{tool.name}</span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            );
+          })()}
           <Tabs defaultValue="All" className="w-full">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
               <TabsList className="bg-muted/50 p-1 h-auto flex-wrap">

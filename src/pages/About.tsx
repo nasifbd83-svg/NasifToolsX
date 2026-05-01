@@ -7,10 +7,10 @@ export const About = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <h1 className="text-5xl font-black mb-8 tracking-tight">About Nasif Tools</h1>
+        <h1 className="text-5xl font-black mb-8 tracking-tight">About NasifToolsX</h1>
         <div className="prose prose-lg dark:prose-invert max-w-none">
           <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-            Nasif Tools is a premium collection of online utilities designed for the modern web. Our mission is to provide fast, secure, and easy-to-use tools for everyday tasks like image processing, PDF manipulation, and text management.
+            NasifToolsX is a high-performance collection of online tools built for creators, marketers, and power users. Our mission is to provide the fastest, most secure processing platform for everyday tasks without compromising on design.
           </p>
           
           <h2 className="text-2xl font-bold mb-4">Why Nasif Tools?</h2>

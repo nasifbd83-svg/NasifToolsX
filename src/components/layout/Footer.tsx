@@ -9,13 +9,13 @@ export const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold">
-                N
+                NX
               </div>
-              <span className="font-bold text-lg">Nasif Tools</span>
+              <span className="font-bold text-lg">NasifToolsX</span>
             </Link>
             <p className="text-muted-foreground max-w-sm text-sm leading-relaxed mb-6">
-              Your one-stop destination for high-quality, secure online tools. 
-              We process everything in your browser, keeping your data private and secure.
+              Your premium destination for secure online tools. 
+              Made By Nasif with a focus on privacy and speed.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="p-2 rounded-full bg-background border hover:border-primary transition-colors">

@@ -20,6 +20,16 @@ export const ToolPageWrapper = ({ children }: ToolPageWrapperProps) => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
+  // Track recent tools
+  useEffect(() => {
+    if (tool) {
+      const saved = localStorage.getItem('recent_tools');
+      let recent = saved ? JSON.parse(saved) as string[] : [];
+      recent = [tool.id, ...recent.filter(id => id !== tool.id)].slice(0, 4);
+      localStorage.setItem('recent_tools', JSON.stringify(recent));
+    }
+  }, [tool?.id]);
+
   if (!tool) return null;
 
   return (
