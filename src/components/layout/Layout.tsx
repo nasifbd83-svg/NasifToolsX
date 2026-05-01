@@ -1,7 +1,7 @@
 import React from 'react';
 import { Header } from './Header';
 import { Footer } from './Footer';
-import { TooltipProvider } from '../ui/tooltip';
+import { TooltipProvider } from '@/components/ui/tooltip';
 
 interface LayoutProps {
   children: React.ReactNode;

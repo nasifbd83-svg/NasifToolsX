@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { ToolHeader } from '../components/tools/ToolHeader';
-import { TOOLS } from '../lib/tools-config';
+import { ToolHeader } from '@/components/tools/ToolHeader';
+import { TOOLS } from '@/lib/tools-config';
 import { useParams, useLocation } from 'react-router-dom';
-import { Card, CardContent } from '../components/ui/card';
-import { Separator } from '../components/ui/separator';
+import { Card, CardContent } from '@/components/ui/card';
+import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Star } from 'lucide-react';
 

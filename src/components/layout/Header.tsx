@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Search, Moon, Sun, Menu, X, ChevronRight } from 'lucide-react';
-import { useTheme } from '../../hooks/useTheme';
-import { Button } from '../ui/button';
-import { Input } from '../ui/input';
+import { useTheme } from '@/hooks/useTheme';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import { motion, AnimatePresence } from 'motion/react';
 
 export const Header = () => {
